@@ -26,5 +26,7 @@ namespace BDServicioWebAPI.Models
         }
     
         public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Factura> Factura { get; set; }
+        public virtual DbSet<Ubicacion> Ubicacions { get; set; }
     }
 }
