@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BDServicioWebAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -14,6 +15,7 @@ namespace BDServicioWebAPI
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            config.MessageHandlers.Add(new TokenValidationHandler());
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
