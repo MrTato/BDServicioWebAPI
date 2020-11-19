@@ -12,6 +12,7 @@ using BDServicioWebAPI.Models;
 
 namespace BDServicioWebAPI.Controllers
 {
+    [Authorize]
     public class FacturasController : ApiController
     {
         private BDServicioEntities1 db = new BDServicioEntities1();
